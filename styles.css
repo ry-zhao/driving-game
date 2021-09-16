@@ -1,0 +1,10 @@
+body {
+  background-color: #288D26;
+}
+
+img {
+  height: 20vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
