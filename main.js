@@ -1,8 +1,18 @@
 var $car = document.querySelector('.car');
 var offsetLeft = 0;
 var offsetTop = 0;
+var driveInterval = null;
+
+document.addEventListener('keydown', driveCar);
 
 function driveCar(event) {
+  if (event.code !== 'Space') {
+    return;
+  }
+  driveInterval = setInterval(moveCar, 16);
+}
+
+function moveCar(event) {
   switch ($car.className) {
     case 'car right':
       offsetLeft += 5;
