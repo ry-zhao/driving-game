@@ -1,4 +1,27 @@
-$car = document.querySelector('.car');
+var $car = document.querySelector('.car');
+var left = 0;
+var top = 0;
+
+function driveCar(event) {
+  switch ($car.className) {
+    case 'car right':
+      console.log('works');
+      left += 5;
+      $car.style.left = left;
+      break;
+    case 'car down':
+      top += 5;
+      $car.style.top = top;
+      break;
+    case 'car left':
+      left -= 5;
+      $car.style.left = left;
+      break;
+    case 'car up':
+      top -= 5;
+      $car.style.top = top;
+  }
+}
 
 document.addEventListener('keydown', turnCar);
 
