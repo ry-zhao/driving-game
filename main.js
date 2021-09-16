@@ -1,25 +1,24 @@
 var $car = document.querySelector('.car');
-var left = 0;
-var top = 0;
+var offsetLeft = 0;
+var offsetTop = 0;
 
 function driveCar(event) {
   switch ($car.className) {
     case 'car right':
-      console.log('works');
-      left += 5;
-      $car.style.left = left;
+      offsetLeft += 5;
+      $car.style.left = offsetLeft + 'px';
       break;
     case 'car down':
-      top += 5;
-      $car.style.top = top;
+      offsetTop += 5;
+      $car.style.top = offsetTop + 'px';
       break;
     case 'car left':
-      left -= 5;
-      $car.style.left = left;
+      offsetLeft -= 5;
+      $car.style.left = offsetLeft + 'px';
       break;
     case 'car up':
-      top -= 5;
-      $car.style.top = top;
+      offsetTop -= 5;
+      $car.style.top = offsetTop + 'px';
   }
 }
 
