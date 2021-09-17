@@ -1,6 +1,6 @@
 body {
   /* background-color: #288d26; */
-  background-size: 100vw;
+  background-size: 100vw 100vh;
   background-image: url(images/bg.gif);
 }
 
@@ -14,16 +14,4 @@ img {
 .car {
   transition: transform 0.1s;
   transform: rotate(45deg);
-}
-
-.car.right {
-}
-
-.car.down {
-}
-
-.car.left {
-}
-
-.car.up {
 }
